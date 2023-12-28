@@ -29,7 +29,7 @@ app.post("/api/location", async (req, res) => {
     const { latitude, longitude } = req.body;
 
     // Use OpenCage API to get location details
-    const apiKey = "OPEN-CAGE-API"   ;
+    const apiKey = "OPEN-CAGE-API-KEY"   ;
     const opencage = require("opencage-api-client");
     const data = await opencage.geocode({
       q: `${latitude}, ${longitude}`,
